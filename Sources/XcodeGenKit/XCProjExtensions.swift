@@ -63,6 +63,16 @@ extension Xcode {
             return "wrapper.swiftcrossimport"
         case ("xcstrings", _):
             return "text.json.xcstrings"
+        case ("mm", _):
+            return "sourcecode.cpp.objcpp"
+        case ("m", _):
+            return "sourcecode.c.objc"
+        case ("cpp", _):
+            return "sourcecode.cpp.objcpp"
+        case ("c", _):
+            return "sourcecode.c.objc"
+        case ("h", _):
+            return "sourcecode.c.h"
         default:
             // fallback to XcodeProj defaults
             return Xcode.filetype(extension: fileExtension)
